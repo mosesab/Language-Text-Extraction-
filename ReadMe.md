@@ -4,7 +4,7 @@
 [![Repo visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
 
 ### 👩‍💻 Project BreakDown
-The extract text.py is the main python file 
+The extract text.py is the main python file.
 
 # 🔦 How the Code Works
 
@@ -31,6 +31,18 @@ The extract text.py is the main python file
   </ul>
 </details>
 
-### 👓 Author
+# 📔 Note
+The code cleans diacritics and digits from sentences before scoring them. See the cleanText.py file.
+The code identifies sentences in text by using full stop (.), Edit the sentence_tokenizer.py if the desired language doesn't use dot to denote end of a sentence.
+
+# 💡 A Few Extra Features
+The python program is designed to only make use of the python standard
+libraries so it can be easily ported to another system.
+
+The program also makes use of the python os library so that the program
+can cross platformly run on windows,linux based computers without having
+to worry about the file path differences i.e '/' and '\'.
+
+# 👓 Author
 Moses Bankole
 
