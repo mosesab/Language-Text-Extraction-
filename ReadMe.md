@@ -1,9 +1,5 @@
 
-extract text.py 
-version = 1 
-Author : Bankole Moses
-
-# Language-Text-Extraction Repo Visit Counter
+# Language-Text-Extraction ReadMe
 
 [![visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
 
@@ -48,4 +44,7 @@ folder(directory) as the extract text.py .
 The program also makes use of the python os library so that the program
 can cross platformly run on windows,linux based computers without having
 to worry about the file path differences i.e '/' and '\'.
+
+👓 Contributions
+Author : Bankole Moses
 
