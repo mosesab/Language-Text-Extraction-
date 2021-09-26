@@ -10,69 +10,9 @@ Tested on Android-Linux , python 3.8.3
 All libraries used are part of the standard python library python 3.8.3 .
 '''
 
-
-import re
-import unicodedata
 import os 
 from sentence_tokenizer import find_sentences
-
-def strip_accents(text):
-    """
-    Strip accents from input String.
-
-    :param text: The input string.
-    :type text: String.
-
-    :returns: The processed String.
-    :rtype: String.
-    """
-    try:
-        text = unicode(text, 'utf-8')
-    except (TypeError, NameError): # unicode is a default on python 3 
-        pass
-    text = unicodedata.normalize('NFD', text)
-    text = text.encode('ascii', 'ignore')
-    text = text.decode("utf-8")
-    return str(text)
-    
-def strip_digitsAndSpecialChars(text):
-    """
-    Convert input text to id.
-
-    :param text: The input string.
-    :type text: String.
-
-    :returns: The processed String.
-    :rtype: String.
-    """
-    text = re.sub('[ ]+', ' ', text)
-    #substitute values that aren't letters,numbers,underscore or dot
-    text = re.sub('[^0-9a-zA-Z_.]', ' ', text)
-    # seperate dot from text by adding whitespace to it
-    text =  re.sub('[.]', ' . ', text)
-    #substitute digits with whitespace
-    text =  re.sub('[0-9]', ' ', text)
-    #substitute single letter words with white_space
-    text = re.sub(r'(?:^| )\w(?:$| )', ' ', text)
-
-    return text
-    
-
-def clean_text(text):
-    """
-    Applies all the filters to input text.
-
-    :param text: The input string.
-    :type text: String.
-
-    :returns: The processed String.
-    :return type: String.
-    """
-    text = text.lower()
-    text = strip_accents(text)
-    text = strip_digitsAndSpecialChars(text)
-      
-    return text
+from cleanText import clean_text
 
 def create_sentence_list(corpus_file_path, count = 0):
 	"""
@@ -96,16 +36,26 @@ def create_sentence_list(corpus_file_path, count = 0):
 	return find_sentences(string)
 		
 def compare_sentences_with_list(corpus_file_path, corpus_name,lexicon_list,corpus_sentence_list):
-	#open the original corpus doc and tokenize it to a token of sentences
+        '''
+	The compare_sentences_with_list is the main function as the name
+	suggests it is used to compare the words in the lexicon_list and the sentences in the corpus_sentence_list 
+	word by word for each sentence,
+	compare_sentences_with_list function does the main functions of
+	comparison, scoring and creating of text file documents where the
+	original(uncleaned) sentences string are written to, it is also where the naming of
+	the text files to show their sentence score is done.
+
+	'''
+        # open the original corpus doc and tokenize it to a token of sentences
 	with open(corpus_file_path, 'r', encoding = 'utf-8') as fd: 
 		input_str = str(fd.read())
 		fd.close()
 	original_string = find_sentences(input_str)
-	#sentence_index is used to know the original sentence equivalent of a corpus_sentence_list element
+	# sentence_index is used to know the original sentence equivalent of a corpus_sentence_list element
 	sentence_index = 0
 	
 	# score each sentence in corpus_sentence_list and 
-	#write it's original corpus sentence equivalent to a text file based on its score.		
+	# write it's original corpus sentence equivalent to a text file based on its score.		
 	for sentence in corpus_sentence_list:
 		word_exists = 0
 		sentence_length = 0
@@ -179,9 +129,9 @@ def start_work(lexicon_name, corpus_name):
 		print("ERROR: .txt is missing from the corpus file name")
 		
 
-
 #filenames must end with .txt
 lexicon_txt = "Yoruba_lexicon.txt"
-corpus_txt = "Yoruba_corpus.txt"	
+corpus_txt = "Yoruba_corpus.txt"
 
-start_work(lexicon_txt, corpus_txt)
+if __name__ == "__main__" :
+    start_work(lexicon_txt, corpus_txt)
