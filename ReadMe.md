@@ -7,8 +7,8 @@ Author : Bankole Moses
 
 [![visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
 
-
-The extract text.py file works by extracting text from a corpus text
+### 🍿 Project BreakDown
+The extract text.py is the main python file, It works by extracting text from a text
 file then passing the extracted text through a couple of functions that
 pass the text around filtering the text as it goes
 
