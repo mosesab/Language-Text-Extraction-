@@ -1,11 +1,47 @@
 
 # Language-Text-Extraction ReadMe
 
-[![visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
+[![Repo visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
 
-### 🍿 Project BreakDown
-The extract text.py is the main python file, It works by extracting text from a text
-file then passing the extracted text through a couple of functions that
+### 👩‍💻 Project BreakDown
+
+The projects requires a text file called the lexicon file, This lexicon file should contain words in the desired language (seperated by white space).
+The 
+
+The extract text.py is the main python file 
+
+###🔦 How the Code Works
+
+* The code works by collecting a text file as an input, 
+* The text in the file are cleaned and split into sentences, 
+* The words in each sentence are matched with the language's lexicon and a score is given to a sentence,
+* Based on the sentence score, the original sentence in text file (uncleaned) is written into a text file,
+* The code outputs four text files with each file containing sentences based on their sentence score 
+* The four text files contain sentences with 25, 50, 75, and 100 sentence score.
+
+
+
+
+
+<details> 
+	<summary>"#🍿Tell me more about the four text files"</summary>
+	<br>
+  <p>After running the code outputs four text files, The files are named based on their match with the words in the lexicon. 
+    The 100 percent text file 
+  
+  </p>
+	<ul>
+	<li>*🔨 The 100 percent text files contain sentences that match with a 100 percent - 74 percent score with the lexicon's language.*</li>
+    <li>The 75 percent text files contain sentences that match with a 75 percent - 51 percent score </li>
+    <li> 50 percent text files tend to contain mixed results, </li>
+		<li>*And the 25 percent text files usually contain sentences that are #NOT# the same language with the lexicon's language.*</li>
+	</ul>
+</details>
+
+
+
+The code works by extracting text from a text
+file then using the lexicon file to get the words in the language, The code then matches words in a sentence 
 pass the text around filtering the text as it goes
 
 The start_work function checks that the file-name or file-path points
