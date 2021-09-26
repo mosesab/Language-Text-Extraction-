@@ -1,5 +1,5 @@
 '''
-clean_text.py
+cleanText.py
 This file contains functions that extract text.py uses to clean text for matching with lexicon.
 Only basic cleaning is done, striping diacritics from the text and striping special characters and numbers with re.
 '''
