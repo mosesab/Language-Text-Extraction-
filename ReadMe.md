@@ -3,6 +3,10 @@ extract text.py
 version = 1 
 Author : Bankole Moses
 
+# GitHub Visit Counter
+
+[![visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
+
 
 The extract text.py file works by extracting text from a corpus text
 file then passing the extracted text through a couple of functions that
