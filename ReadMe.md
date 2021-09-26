@@ -8,7 +8,7 @@
 * The lexicon file should be a utf-8 text file that contains the words in the language.
 * The text document that requires language text extraction should be a utf-8 text file.
 
-# 🔦 How the Code Works
+### 🔦 How the Code Works
 
 * The code works by collecting a text file as an input, 
 * The text in the file are cleaned and split into sentences, 
@@ -34,13 +34,13 @@
 </details>
 
 
-# 🧪 How to Run the Code
+### 🧪 How to Run the Code
 * Move your lexicon text file and the language document text file to the code's directory
 * change the string variables lexicon_txt and corpus_txt to the name of your lexicon text file and the language document text file respectively
 * Run the code
 
 
-# 📔 Note
+### 📔 Note
  <ul>
 	<li>The code cleans diacritics and digits from sentences before scoring them. See the cleanText.py file.</li>
 	<li>The code identifies sentences in text by using full stop (.), 
@@ -49,7 +49,7 @@
 
 
 
-# 💡 A Few Extra Features
+### 💡 A Few Extra Features
  <ul>
 	<li>The python program is designed to only make use of the python standard libraries so it can be easily ported to another system.</li>
 	<li>The program also makes use of the python os library so that the program can cross platformly run on windows,linux based computers without having 
@@ -57,6 +57,6 @@
   </ul>
 
 
-# 👓 Author
+### 👓 Author
 Moses Bankole
 
