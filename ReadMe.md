@@ -3,7 +3,7 @@ extract text.py
 version = 1 
 Author : Bankole Moses
 
-# GitHub Visit Counter
+# Language-Text-Extraction Repo Visit Counter
 
 [![visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
 
