@@ -179,9 +179,9 @@ def start_work(lexicon_name, corpus_name):
 		print("ERROR: .txt is missing from the corpus file name")
 		
 
-
 #filenames must end with .txt
 lexicon_txt = "Yoruba_lexicon.txt"
-corpus_txt = "Yoruba_corpus.txt"	
+corpus_txt = "Yoruba_corpus.txt"
 
-start_work(lexicon_txt, corpus_txt)
+if __name__ == "__main__" :
+    start_work(lexicon_txt, corpus_txt)
