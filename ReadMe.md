@@ -17,7 +17,7 @@ The extract text.py is the main python file.
 
 
 <details> 
-	<summary># "🍿Tell me more about the four text files"</summary>
+	<summary> # "🍿Tell me more about the four text files"</summary>
 	<br>
   <p>
 	  After running the code outputs four text files, 
