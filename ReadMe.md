@@ -4,13 +4,9 @@
 [![Repo visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
 
 ### 👩‍💻 Project BreakDown
-
-The projects requires a text file called the lexicon file, This lexicon file should contain words in the desired language (seperated by white space).
-The 
-
 The extract text.py is the main python file 
 
-###🔦 How the Code Works
+# 🔦 How the Code Works
 
 * The code works by collecting a text file as an input, 
 * The text in the file are cleaned and split into sentences, 
@@ -24,7 +20,7 @@ The extract text.py is the main python file
 
 
 <details> 
-	<summary>"#🍿Tell me more about the four text files"</summary>
+	<summary>"# 🍿Tell me more about the four text files"</summary>
 	<br>
   <p>After running the code outputs four text files, The files are named based on their match with the words in the lexicon. 
     The 100 percent text file 
