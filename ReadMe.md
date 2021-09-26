@@ -4,9 +4,9 @@
 [![Repo visits](https://github-visit-counter.herokuapp.com/mosesab/Language-Text-Extraction-/visits.svg)](#)
 
 ### 👩‍💻 Project BreakDown
-The extract text.py is the main python file and start_work function is the driver function that starts the code.
-The lexicon file should be a utf-8 text file that contains the words in the language.
-The text document that requires language text extraction should be a utf-8 text file.
+* The extract text.py is the main python file and start_work function is the driver function that starts the code.
+* The lexicon file should be a utf-8 text file that contains the words in the language.
+* The text document that requires language text extraction should be a utf-8 text file.
 
 # 🔦 How the Code Works
 
@@ -38,7 +38,7 @@ The text document that requires language text extraction should be a utf-8 text 
 * Move your lexicon text file and the language document text file to the code's directory
 * change the string variables lexicon_txt and corpus_txt to the name of your lexicon text file and the language document text file respectively
 * Run the code
-* 
+
 
 # 📔 Note
  <ul>
